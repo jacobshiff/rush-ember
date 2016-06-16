@@ -6,7 +6,6 @@ export default Model.extend({
   title: attr('string'),
   instructor: attr('string'),
   description: attr('string'),
-  studio_id: attr('number'),
   studio: belongsTo('studio'),
   customers: hasMany('customer')
 });
