@@ -1,0 +1,7 @@
+All. The. Studios.
+<ul>
+  {{#each model as |studio|}}
+    <li class="studio-name">{{link-to studio.name "studios.studio" studio}}</li>
+  {{/each}}
+</ul>
+{{outlet}}
