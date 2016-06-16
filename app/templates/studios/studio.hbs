@@ -2,7 +2,7 @@
 All the courses for {{model.name}}
 <ul>
 {{#each model.courses as |course|}}
-<li>{{course.title}}</li>
+<li>{{link-to course.title 'studios.studio.courses.course' course}}</li>
 {{/each}}
 </ul>
 {{outlet}}
