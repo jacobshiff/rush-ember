@@ -1,8 +1,14 @@
-All. The. Courses.
-<ul>
-  {{#each model as |course|}}
-    <li class="course-name">{{course.title}}</li>
+<div class="row">
+  <div class="col-md-4">
+  All. The. Courses.
+    <ul>
+      {{#each model as |course|}}
+        <li class="course-name">{{course.title}}</li>
 
-  {{/each}}
-</ul>
-{{outlet}}
+      {{/each}}
+    </ul>
+  </div>
+  <div class="col-md-8">
+    {{outlet}}
+  </div> 
+</div>
