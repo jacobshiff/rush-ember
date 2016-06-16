@@ -6,11 +6,13 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('studios');
   this.route('studios', function() {
     this.route('studio', {path: ':studio_id'}, function() {
       this.route('courses');
     });
   });
+  this.route('courses')
 });
 
 export default Router;

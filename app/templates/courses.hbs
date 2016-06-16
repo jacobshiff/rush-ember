@@ -1,0 +1,8 @@
+All. The. Courses.
+<ul>
+  {{#each model as |course|}}
+    <li class="course-name">{{course.title}}</li>
+
+  {{/each}}
+</ul>
+{{outlet}}
