@@ -7,15 +7,15 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('courses', function(){
-    this.route('course', {path: ':course_id'});
+    this.route('course', {path: ':course_slug'});
   });
   this.route('customers', function(){
     this.route('customer', {path: ':customer_id'});
   });
   this.route('studios', function() {
-    this.route('studio', {path: ':studio_id'}, function() {
+    this.route('studio', {path: ':studio_slug'}, function() {
       this.route('courses', function(){
-        this.route('course', {path: ':course_id'});
+        this.route('course', {path: ':course_slug'});
         this.route('new');
       });
     });
