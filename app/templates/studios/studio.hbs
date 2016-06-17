@@ -4,5 +4,6 @@ All the courses for {{model.name}}
 {{#each model.courses as |course|}}
 <li>{{link-to course.title 'studios.studio.courses.course' course}}</li>
 {{/each}}
+    {{link-to "Add New Course" 'studios.studio.courses.new' model}}
 </ul>
 {{outlet}}
