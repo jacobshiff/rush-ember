@@ -6,5 +6,8 @@ export default Model.extend({
   name: attr(),
   address: attr(),
   courses: hasMany('course'),
-  customers: hasMany('customer')
+  customers: hasMany('customer'),
+  slug: function() {
+    return this.get('name').replace(/\s+/g, '-').toLowerCase();
+  }.property('name') 
 });

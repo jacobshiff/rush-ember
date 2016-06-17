@@ -13,7 +13,7 @@ Router.map(function() {
     this.route('customer', {path: ':customer_id'});
   });
   this.route('studios', function() {
-    this.route('studio', {path: ':studio_id'}, function() {
+    this.route('studio', {path: ':slug'}, function() {
       this.route('courses', function(){
         this.route('course', {path: ':course_id'});
         this.route('new');
