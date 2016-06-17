@@ -3,9 +3,9 @@ import attr from 'ember-data/attr';
 import { belongsTo, hasMany } from 'ember-data/relationships';
 
 export default Model.extend({
-  title: attr('string'),
-  instructor: attr('string'),
-  description: attr('string'),
+  title: attr(),
+  instructor: attr(),
+  description: attr(),
   studio: belongsTo('studio'),
   customers: hasMany('customer')
 });
