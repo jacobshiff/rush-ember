@@ -8,6 +8,9 @@ export default Model.extend({
   description: attr(),
   category_tags: attr(),
   studio: belongsTo('studio'),
-  customers: hasMany('customer')
+  customers: hasMany('customer'),
+  course_slug: function() {
+    return this.get('title').replace(/\s+/g, '-').toLowerCase();
+  }.property()
   // schedule: hasMany('schedule')
 });
