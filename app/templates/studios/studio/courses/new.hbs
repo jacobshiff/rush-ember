@@ -1,0 +1,14 @@
+<form {{ action "submit" on="submit" }}>
+
+  <fieldset class="form-group"> {{input class="form-control" value=model.title placeholder="Course Name"}}</fieldset>
+
+  <fieldset class="form-group">  {{input class="form-control" value=model.instructor placeholder="Instructor Name"}}</fieldset>
+
+  <fieldset class="form-group">  {{textarea class="form-control" value=model.description placeholder="Course Description"}}</fieldset>
+
+  <fieldset class="form-group">  {{input class="form-control" value=model.category_tags placeholder="Add a category"}}</fieldset>
+
+  <fieldset>{{input type="hidden" value=model.studio.id}}</fieldset>
+
+  <input class="btn btn-primary" type="submit" value="submit">
+</form>

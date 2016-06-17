@@ -9,4 +9,5 @@ export default Model.extend({
   category_tags: attr(),
   studio: belongsTo('studio'),
   customers: hasMany('customer')
+  // schedule: hasMany('schedule')
 });
