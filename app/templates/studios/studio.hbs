@@ -1,12 +1,11 @@
 <h1>{{model.name}}</h1>
 All the courses for {{model.name}}
 <ul>
-
-  {{#each model.courses as |course|}}
-    {{#if course.id}}
-      <li>{{link-to course.title 'studios.studio.courses.course' course}}</li>
-    {{/if}}
-  {{/each}}
+{{#each model.courses as |course|}}
+  {{#if course.id}}
+    <li>{{link-to course.title 'studios.studio.courses.course' course}}</li>
+  {{/if}}
+{{/each}}
   <br>
   <div class="btn btn-new">
     {{link-to "Add New Course" 'studios.studio.courses.new' model}}

@@ -3,7 +3,9 @@
   All. The. Courses.
     <ul>
       {{#each model as |course|}}
+      {{#if course.id}}
         <li class="course-name">{{link-to course.title "courses.course" course}}</li>
+      {{/if}}
       {{/each}}
     </ul>
   </div>
