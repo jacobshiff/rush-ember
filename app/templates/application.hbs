@@ -1,18 +1,18 @@
-<div class="container background-blue">
-  <nav class="navbar navbar-inverse navbar-translucent">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        {{#link-to 'index' class="navbar-brand"}}Home{{/link-to}}
-      </div>
-
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-        <ul class="nav navbar-nav">
-          <li class="inactive" id="studios">{{link-to 'Studios' 'studios'}}</li>
-          <li class="inactive" id="courses">{{link-to 'Courses' 'courses'}}</li>
-          <li class="inactive" id="customers">{{link-to 'Customers' 'customers'}}</li>
-        </ul>
-      </div>
+<nav class="navbar navbar-inverse navbar-translucent">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      {{#link-to 'index' class="navbar-brand"}}Home{{/link-to}}
     </div>
-  </nav>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+      <ul class="nav navbar-nav">
+        <li class="inactive" id="studios">{{link-to 'Studios' 'studios'}}</li>
+        <li class="inactive" id="courses">{{link-to 'Courses' 'courses'}}</li>
+        <li class="inactive" id="customers">{{link-to 'Customers' 'customers'}}</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container background-blue">
   {{outlet}}
 </div>
