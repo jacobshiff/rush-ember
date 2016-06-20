@@ -1,24 +1,25 @@
-  <nav class="navbar navbar-inverse navbar-translucent">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        {{#link-to 'index' class="navbar-brand"}}Home{{/link-to}}
-      </div>
-
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-        <ul class="nav navbar-nav">
-          {{#link-to 'studios' tagName='li' id="studios"}}
-            {{link-to 'Studios' 'studios'}}
-          {{/link-to}}
-
-          {{#link-to 'courses' tagName='li' id="courses"}}
-            {{link-to 'Courses' 'courses'}}
-          {{/link-to}}
-
-          {{#link-to 'customers' tagName='li' id="customers"}}
-            {{link-to 'Customers' 'customers'}}
-          {{/link-to}}
-        </ul>
-      </div>
+<nav class="navbar navbar-inverse navbar-translucent">
+  <div class="container-fluid">
+    <div class="navbar-header col-xs-1">
+      {{#link-to 'index' class="navbar-brand"}}RUSH{{/link-to}}
     </div>
-  </nav>
+    <div class="col-xs-3">
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+      <ul class="nav navbar-nav col-xs-6">
+        {{#link-to 'studios' tagName='li' id="studios"}}
+          {{link-to 'Studios' 'studios'}}
+        {{/link-to}}
+
+        {{#link-to 'courses' tagName='li' id="courses"}}
+          {{link-to 'Courses' 'courses'}}
+        {{/link-to}}
+
+        {{#link-to 'customers' tagName='li' id="customers"}}
+          {{link-to 'Customers' 'customers'}}
+        {{/link-to}}
+      </ul>
+    </div>
+  </div>
+</nav>
 {{yield}}

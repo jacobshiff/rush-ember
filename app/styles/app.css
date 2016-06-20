@@ -1,7 +1,16 @@
+body {
+  background-color: rgba(0, 150, 130, 0.08);
+}
+
 .navbar-translucent{
   opacity: .80;
 }
 
-body {
-  background-color: rgba(0, 150, 130, 0.08);
+#studio-list{
+  background-color: rgba(0, 150, 130, .10);
+  height: 10000;
+}
+
+#studio-show{
+  background-color: rgba(0, 150, 130, .10);
 }
