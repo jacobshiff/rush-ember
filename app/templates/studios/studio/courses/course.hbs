@@ -1,12 +1,14 @@
-<h3>{{model.title}}</h3>
-<h4>
-  Instructor: {{model.instructor}} | Categories:
-  {{#each model.category_tags as |cat|}}
-    {{cat}}
-  {{/each}}
-</h4>
-<p>
-  Description:
-  {{model.description}}
-</p>
+<div class="container" id="studio-show">
+  <h3>{{model.title}}</h3>
+  <h4>
+    Instructor: {{model.instructor}} | Categories:
+    {{#each model.category_tags as |cat|}}
+      {{cat}}
+    {{/each}}
+  </h4>
+  <p>
+    Description:
+    {{model.description}}
+  </p>
+</div>
 {{outlet}}
