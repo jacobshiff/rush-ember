@@ -1,4 +1,40 @@
 <div class="container background-blue">
-{{navbar-component}}
+{{!-- {{navbar-component invalidateSession=(action "invalidateSession")}} --}}
+
+
+<nav class="navbar navbar-inverse navbar-translucent">
+  <div class="container-fluid">
+    <div class="navbar-header col-xs-1">
+      {{#link-to 'index' class="navbar-brand"}}RUSH{{/link-to}}
+    </div>
+    <div class="col-xs-3">
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+      <ul class="nav navbar-nav col-xs-6">
+        {{#link-to 'studios' tagName='li' id="studios"}}
+          {{link-to 'Studios' 'studios'}}
+        {{/link-to}}
+
+        {{#link-to 'courses' tagName='li' id="courses"}}
+          {{link-to 'Courses' 'courses'}}
+        {{/link-to}}
+
+        {{#link-to 'customers' tagName='li' id="customers"}}
+          {{link-to 'Customers' 'customers'}}
+        {{/link-to}}
+
+        <li><a href="#" {{action 'invalidateSession' }}>Logout</a></li> 
+ 
+      </ul>
+    </div>
+  </div>
+</nav>
+{{yield}}
+
+
+
+
+
+
   {{outlet}}
 </div>

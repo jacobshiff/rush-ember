@@ -7,4 +7,4 @@ export default Ember.Route.extend(ApplicationRouteMixin, {
         this.get('session').invalidate();
     }
   }
-});
+})
