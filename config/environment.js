@@ -19,7 +19,7 @@ module.exports = function(environment) {
     }
   };
 
-  ENV['ember-simple-auth'] = {  
+  ENV['ember-simple-auth'] = {
     authorizer: 'authorizer:custom',
     routeAfterAuthentication: '/'
   };
@@ -46,7 +46,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.host = 'http://guarded-ridge-99455.herokuapp.com';
+    ENV.host = 'https://guarded-ridge-99455.herokuapp.com';
   }
 
   return ENV;
