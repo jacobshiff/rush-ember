@@ -46,7 +46,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.host = 'https://guarded-ridge-9945.herokuapp.com';
+    ENV.host = 'https://guarded-ridge-99455.herokuapp.com';
   }
 
   return ENV;
