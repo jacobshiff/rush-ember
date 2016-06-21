@@ -1,6 +1,5 @@
 <div class="container background-blue">
-{{!-- {{navbar-component invalidateSession=(action "invalidateSession")}} --}}
-
+{{!-- {{navbar-component triggerInvalidateSession=(action "invalidateSession")}} --}}
 
   <nav class="navbar navbar-inverse navbar-translucent">
     <div class="container-fluid">
@@ -23,8 +22,12 @@
             {{link-to 'Customers' 'customers'}}
           {{/link-to}}
 
-          <li><a href="/login">Login</a></li>
-          <li><a href="#" {{action 'invalidateSession' }}>Logout</a></li>
+          
+          {{#if session.isAuthenticated}}
+            <li><a href="#" {{action 'invalidateSession' }}>Logout</a></li>
+          {{else}}
+            <li><a href="/login">Login</a></li>
+          {{/if}}
 
         </ul>
       </div>
