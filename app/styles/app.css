@@ -6,11 +6,6 @@ body {
   opacity: .80;
 }
 
-#studio-list{
-  background-color: rgba(0, 150, 130, .10);
-  height: 10000;
-}
-
-#studio-show{
+.custom{
   background-color: rgba(0, 150, 130, .10);
 }
