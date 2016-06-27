@@ -9,3 +9,24 @@ body {
 .custom{
   background-color: rgba(0, 150, 130, .10);
 }
+
+.register-div{
+  background-color: rgba(0, 150, 130, .30);
+  margin:100px;
+  padding: 70px;
+  padding-left:50px;
+  padding-right:50px;
+}
+
+.signin-div{
+  padding: 70px 0;
+  background-color: rgba(0, 150, 130, .30);
+  margin:100px;
+  padding-left:50px;
+  padding-right:50px;
+}
+
+.signup-link{
+  padding: 20px;
+  margin-left: 230px;
+}

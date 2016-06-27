@@ -37,7 +37,7 @@ export default Base.extend({
           });
         });
       }, (error) => {
-        // Wrapping aync operation in Ember.run
+        // Wrapping async operation in Ember.run
         run(() => {
           reject(error);
         });

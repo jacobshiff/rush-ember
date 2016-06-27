@@ -22,11 +22,12 @@
             {{link-to 'Customers' 'customers'}}
           {{/link-to}}
 
-          
+
           {{#if session.isAuthenticated}}
             <li><a href="#" {{action 'invalidateSession' }}>Logout</a></li>
           {{else}}
-            <li><a href="/login">Login</a></li>
+            <li><a href="/login">Log In</a></li>
+            <li><a href="/signup">Sign Up</a></li>
           {{/if}}
 
         </ul>

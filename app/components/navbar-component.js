@@ -3,8 +3,9 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   actions: {
     submit(){
-      debugger;
-      this.attrs.triggerInvalidateSession();
+      this.attrs.triggerInvalidateSession().then(function() {
+        this.transitionToRoute('signin');
+      });
     }
   }
 });

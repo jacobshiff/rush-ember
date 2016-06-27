@@ -1,7 +1,14 @@
-<form {{action 'authenticate' on='submit'}}>
-  <label for="email">Email</label>
-  {{input id='email' value=email}}
-  <label for="password">Password</label>
-  {{input id='password' value=password}}
-  <button type="submit">Login</button>
-</form>
+<div class="signin-div">
+
+  <form {{action 'authenticate' on='submit'}}>
+    <label for="email">Email</label>
+    {{input id='email' value=email}}
+    <label for="password">Password</label>
+    {{input type='password' id='password' value=password}}
+    <button type="submit">Login</button>
+  </form>
+  <div class="col-xs-6 signup-link">
+      <strong>If you haven't signed up, {{link-to "Sign-Up" "signup"}}</strong>
+  </div>
+
+</div>
